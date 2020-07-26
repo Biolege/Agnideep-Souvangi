@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!--linking the required cdns and googlefonts-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>SuvangiNew1</title>
+    <style>
+        .navbar-custom
+        {
+            background-color: rgb(0, 0, 49);
+            padding-bottom: 50px;
+        }
+       
+        .navbar-brand
+        {
+            color: white;
+        }
+       
+        .container-fluid
+        {
+            padding: 0;
+        }
+        
+        .icon2
+        {
+            width: 20px;
+            height: 20px;
+        }
+       
+       .sidebar ul
+       {
+           list-style-type: none;
+       }
+       .formclass
+       {
+           background-color:#ff8900;
+           width: 230px;
+           border-radius: 20px;
+           height: 800px;
+           padding-top: 40px;
+           font-weight: bolder;
+           margin-left: 30px;
+           margin-bottom: -800px;
+           padding-left: -20px;
+       }
+       .ulsidebar
+       {
+           background-color: #ff8900;
+       }
+       .lisidebar
+       {
+           background-color: #ff8900;
+           padding: 7px;
+           padding-right: 0;
+       }
+       .lisidebar a
+       {
+        color: black;
+        padding-left: 5px;
+       }
+       .lisidebar a:focus
+       {
+           background-color: rgb(0, 0, 49) ;
+           color: white;
+           border-radius: 4px 0px 0px 4px;   
+           padding-right: 103.5px;
+       }
+       #tdi2:focus
+       {
+           background-color: rgb(0, 0, 49) ;
+           color: white;
+           border-radius: 4px 0px 0px 4px;   
+           padding-right: 107.5px;
+       }
+       #tdi3:focus
+       {
+           background-color: rgb(0, 0, 49) ;
+           color: white;
+           border-radius: 4px 0px 0px 4px;   
+           padding-right: 69.5px;
+       }
+       #tdi4:focus
+       {
+           background-color: rgb(0, 0, 49) ;
+           color: white;
+           border-radius: 4px 0px 0px 4px;   
+           padding-right: 107px;
+       }
+       #tdi5:focus
+       {
+           background-color: rgb(0, 0, 49) ;
+           color: white;
+           border-radius: 4px 0px 0px 4px;   
+           padding-right: 128px;
+       }
+       .lisidebar a:hover
+       {
+           cursor: pointer;
+           text-decoration: none;
+       }
+       .tab 
+       {
+            overflow: hidden;
+            
+            background-color:rgb(0, 0, 49) ;
+            float: right;
+            width: 65rem;
+            margin-right: 30px;
+            
+        }
+
+        /* Style the buttons that are used to open the tab content */
+        .tab button
+        {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            color: white;
+            padding-left: 45px;
+            padding-right: 45px;
+            padding-bottom: 5px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:focus
+        {
+            background-color: white;
+            border-radius: 10px 10px;
+            color: black;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active
+        {
+            background-color: white;
+            border-radius: 8px 8px 0 0;
+            color: black;
+        }
+
+        /* Style the tab content */
+        .tabcontent 
+        {
+            display: none;
+            padding: 30px;
+            border-top: none;
+            background-color: white;
+            width: 65rem;
+            float: right;
+            margin-right: 30px;
+            border-radius: 12px;
+            height: 761px;
+            margin-bottom: 50px;
+            
+        }
+        .tabcontent h3
+        {
+            background-color: white;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 49px;  
+        }
+        .tabcontent p 
+        {
+            background-color: white;
+        }
+        .tabcontent hr
+        {
+            border-top: 2px solid darkgrey;
+            margin-left: 21px;
+
+        }
+        .diapic
+        {
+            width: 40px;
+            height: 40px;
+        }
+        .secbtn
+        {
+            background-color: orange;
+            border-radius: 20px;
+            color: black;
+            margin-right: 10px;
+            border: none;
+            padding-left: 10px;
+            padding-right: 15px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            float: right;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 16px;
+            margin-top: -31px;
+        }
+        hr
+        {
+            margin-top: 0;
+        }
+        
+       
+        
+        
+        .activespan a 
+        {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+        }
+        .add
+        {
+            display: flex;
+            background-color: white;
+            padding-top: 15px;
+        }
+        .add p
+        {
+            padding-left: 0;
+            padding-right: 50px;
+        }
+        .tests
+        {
+            background-color: white;
+            color: black;
+            border: 2px solid rgb(1, 1, 58);
+            border-radius: 8px;
+            padding-left: 10px;
+            padding-right: 50px;
+            padding-bottom: 5px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .tb ul 
+        {
+            list-style-type: none;
+            background-color: white;
+        }
+        .tb
+        {
+            padding: 20px;
+            background-color: white;
+            width: 950px;
+            margin-left: 26px;
+            box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.05);
+            margin-top: 20px;
+        }
+        .tb li
+        {
+            float: left;
+            background-color: white;
+        }
+       .tb p 
+       {
+            padding-right: 128px;
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            margin-left: -40px;
+       }
+       /*.tbli1
+       {
+           padding-left: 160px;
+       }*/
+
+       .tbli1 p 
+       {
+            margin-left: 119px;
+       }
+
+       .tbentry ul 
+        {
+            list-style-type: none;
+            background-color: white;
+        }
+        .tbentry
+        {
+            padding: 20px;
+            background-color: white;
+            margin-top: 20px;
+            margin-left: 21px;
+        }
+        .tbentry li
+        {
+            float: left;
+            background-color: white;
+
+        }
+       .tbentry p 
+       {
+            padding-right: 103px;
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            margin-left: -40px;
+            padding-left: 20px;
+            margin-top: -9px;
+       }
+       .tbli1e
+       {
+           padding-left: 0px;
+           
+       }
+      
+      .tabletview
+      {
+          display: none;
+      }
+      @media only screen and ( max-width: 768px)
+      {
+          .tabletview
+          {
+              background-color: #ff8900;
+              color: black;
+              display: inline;
+              margin-left: 66px;
+          }
+          
+          .tabletview a
+          {
+            background-color: #ff8900;
+            color: black;
+            font-weight: bolder;
+            padding-right: 122px;
+            margin-right: -87px;
+            margin-left: -8px;
+            padding-bottom: 10px;
+            border-radius: 12px;
+          }
+          .formclass
+          {
+              display: none;
+          }
+          .sidebar
+          {
+              width: 1100px;
+          }
+          .tabdview 
+          {
+              margin-top: -1px;
+          }
+          .tabs
+          {
+              margin-top: 50px;
+              margin-right: 30px;
+              padding-top: 1px;
+          }
+          .entryhr
+          {
+              margin-top: 20px;
+          }
+          .tabcontent
+          {
+              width: 45rem;
+              margin-left: 20px;
+              float: left;
+          }
+          .tb p
+          {
+              padding-right: 30px;
+          }
+          .tb li
+          {
+              padding-left: 0px;
+          } 
+          .tbentry p
+          {
+              padding-right: 90px;
+              
+          }
+          .activep
+          {
+              margin-top: -27px;
+              padding-left: 60px;
+              margin-left: 20px;
+          }
+          .activespan
+          {
+              margin-left: 42px;
+          }
+          #tabviewafirst 
+          {
+            padding-left: 29px;
+          }
+          #tabviewalast
+          {
+            padding-right: 62px;
+          }
+          #statusnew1 p
+          {
+            padding-left: 0px;
+            padding-right: 115px; 
+          }
+          #statusnew2 p 
+          {
+              padding-right: 110px;
+              padding-left: 0px;
+          }
+          .tbli1 p
+          {
+            margin-left: 35px;
+          }
+          #proml 
+          {
+            margin-left: 13px;
+          }
+          #packml 
+          {
+              margin-left: 18px;
+          }
+          #statml 
+          {
+            margin-left: 24px;
+          }
+          #formsearch 
+          {
+              margin-left: 443px;
+              float: right;
+          }
+          #formsearch i 
+          {
+              margin-right: -24px;
+          }
+          .photos 
+          {
+              margin-top: 38px;
+          }
+          .tb 
+          {
+              width: 634px;
+          }
+          #flexing 
+          {
+              margin-left: -33px;
+          }
+          .tbli1e p 
+          {
+            margin-left: -90px;
+            padding-right: 0px;
+          }
+          .activep 
+          {
+            margin-left: 238px;
+            padding-right: 0;
+            margin-top: -50px;
+          }
+          #notgreen, #notgreensec
+          {
+            margin-left: -88px;
+            padding-right: 66px;
+          }
+      }
+     
+       *
+       {
+           background-color:rgb(0, 0, 49) ;
+           font-family: 'Nunito', sans-serif;
+       }
+       #dlph3
+       {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 33px;
+       }
+       .addp
+       {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+       }
+       #address
+       {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+       }
+       #stn 
+       {
+           margin-left: -22px;
+           padding-right: 26px;
+       }
+       .greybox
+       {
+        position: absolute;
+        width: 142px;
+        height: 44px;
+        left: 1145px;
+        top: 316px;
+        float: right;
+        background: #C4C4C4;
+       }
+       #libtn1
+       {
+        position: absolute;
+        width: 91px;
+        height: 25px;
+        left: 1160px;
+        top: 619px;
+        border: none;
+        background: #FF8900;
+        border-radius: 5px;
+       }
+       #libtn2
+       {
+        position: absolute;
+        width: 91px;
+        height: 25px;
+        left: 1164px;
+        top: 699px;
+        border: none;
+        background: #FF8900;
+        border-radius: 5px;
+       }
+       .search-container 
+        {
+            float: right;
+            margin-top: -4px;
+            border: 1px solid gray;
+            height: 37px;
+            margin-right: 151px;
+            border-radius: 100px;
+            background-color: white;
+            width: 597px;
+        }
+        .search-container button 
+        {
+            float: right;
+            margin-top: 5px;
+            margin-right: 10px;
+            background: white;
+            font-size: 17px;
+            border: none;
+            background-color: white;
+        }
+        input[type=text] 
+        {
+            margin-top: 5px;
+            font-size: 17px;
+            border: none;
+            margin-left: 17px;
+            background-color: white;
+        }
+        .fa-search:before 
+        {
+            content: "\f002";
+            background: white;
+            color: purple;
+        }
+        .dropbtnsearch
+        {
+            background-color: white;
+            margin-top: 60px;
+        }
+        #formsearch 
+        {
+            background-color: white;
+            height: 0px;
+        }
+        .mydetails 
+        {
+            background-color: #ff8900;
+        }
+        .diaspan button[type=submit]
+        {
+            background-color: white;
+            border: none;
+        }
+        #notgreen 
+        {
+            color: black;
+            margin-left: -22px;
+        }
+        #notgreensec 
+        {
+            color: black;
+            margin-left: -10px;
+        }
+        #status
+        {
+            margin-left: -9px;
+        }
+        #testord2
+        {
+            margin-left: 15px;
+        }
+        #statusnew1 
+        {
+            color: green;
+        }
+        #statusnew2
+        {
+            color: red;
+            margin-left: 7px;
+        }
+        .photos
+        {
+            background-color: white;
+            display: flex;
+        }
+        .pic1 
+        {
+            height: 54px;
+            width: 54px;
+            border-radius: 50%;
+            background-color: grey;
+            margin-left: 77px;
+            margin-top: 33px;
+            margin-bottom: 56px;
+        }
+        .pic2
+        {
+            height: 54px;
+            width: 54px;
+            border-radius: 50%;
+            background-color: grey;
+            margin-left: 140px;
+            margin-top: 33px;
+            margin-bottom: 56px;
+        }
+        .pic3
+        {
+            height: 54px;
+            width: 54px;
+            border-radius: 50%;
+            background-color: grey;
+            margin-left:140px;
+            margin-top: 33px;
+            margin-bottom: 56px;
+        }
+        .search-container 
+        {
+            float: right;
+            margin-top: -4px;
+            border: 1px solid gray;
+            height: 37px;
+            margin-right: 151px;
+            border-radius: 100px;
+            background-color: white;
+            width: 597px;
+        }
+        .search-container button 
+        {
+            float: right;
+            margin-top: 5px;
+            margin-right: 10px;
+            background: white;
+            font-size: 17px;
+            border: none;
+            background-color: white;
+        }
+        input[type=text] 
+        {
+            margin-top: 5px;
+            font-size: 17px;
+            border: 2px solid #eaeaea;
+            border-radius: 1000px;
+            margin-left: 17px;
+            background-color: white;
+            padding-left: 9px;
+        }
+        .fa-search:before 
+        {
+            content: "\f002";
+            background: white;
+            color: purple;
+        }
+        #formsearch 
+        {
+            background-color: white;
+            height: 0px;
+            margin-left: 743px;
+            
+            margin-top: -20px;
+            /*float: right;*/
+        }
+        #formsearch button 
+        {
+            background: white;
+            border: none;
+            margin-left: -41px;
+            height: 0px;
+        }
+        .pic1home 
+        {
+            margin-top: 87px ;
+            margin-left: -44px;
+            color: #141b41;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+        }
+        .pic2ord
+        {
+            margin-top: 87px ;
+            margin-left: -44px;
+            color: #141b41;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+        }
+        .pic3rep
+        {
+            margin-top: 87px ;
+            margin-left: -44px;
+            color: #141b41;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+        }
+        #activepic 
+        {
+            background-color: black;
+        }
+        .ordercards 
+        {
+            display: flex;
+            background-color: white;
+            margin-top: 41px;
+        }
+        .ordercards p 
+        {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            color: #142b41;
+            padding-left: 14px;
+            padding-top: 6px;
+        }
+        .orders, .sc, .pending
+        {
+            width: 332px;
+            margin-left: 27px;
+            height: 67px;
+            background: #FFFFFF;
+            box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .calendar 
+        {
+            display: flex;
+            float: right;
+            background-color: white;
+        }
+        .calendar p 
+        {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 25px;
+            color: #141b41;
+        }
+        .calendar i 
+        {
+            background-color: white;
+            color: black;
+            font-size: larger;
+        }
+        .h3details 
+        {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 25px;
+            margin-top: 33px;
+            margin-left: 29px;
+        }
+        .namepic 
+        {
+            width: 43px;
+            height: 43px;
+            border-radius: 50%;
+            background: #eaeaea;
+            margin-left: -39px;
+        }
+        #flexing 
+        {
+            display: flex;
+            margin-top: -17px;
+        }
+        #flexing p 
+        {
+            margin-left: 2px;
+            padding-left: 0px;
+            margin-top: 7px;
+            padding-right: 112px;
+        }
+        .activep 
+        {
+            padding-right: 21px;
+        }
+        /*@media only screen and ( max-width: 360px)
+        {
+            .desktopandtabletview
+            {
+                display: none;
+            }
+            .phoneview 
+            {
+                background: white;
+            }
+        }*/
+    </style>
+</head>
+<body>
+    <div class="desktopandtabletview">
+        <nav class="navbar navbar-custom"> 
+            <a class="navbar-brand" href="#"> 
+            BIOLEGE
+            </a> 
+            
+        </nav>
+        <div class="tabdview">
+            <div id="mySidebar" class="sidebar">
+                <div class="formclass">
+                    <ul class="ulsidebar">
+                        <li class="lisidebar">
+                            <div class="mydetails">
+                                <a href="#" >  Dashboard</a>
+                            </div>
+                        </li>
+                        <li  class="lisidebar">
+                            <div class="mydetails">
+                                <a href="#" id="tdi2">  Customer</a>
+                            </div>
+                        </li>
+                        <li  class="lisidebar">
+                            <div class="mydetails">
+                                <a href="#" id="tdi3">  Tests and Labs</a>
+                            </div>
+                        </li>
+                        <li  class="lisidebar">
+                            <div class="mydetails">
+                                <a href="#" id="tdi4">  Employee</a>
+                            </div>
+                        </li>
+                        <li  class="lisidebar">
+                            <div class="mydetails">
+                                <a href="#" id="tdi5">  Search</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tabletview">
+                    
+                    <a href="#" id="tabviewafirst"> &nbsp; Dashboard</a>
+                    <a href="#"> &nbsp; Customer</a>
+                    <a href="#"> &nbsp; Tests and Labs</a>
+                    <a href="#"> &nbsp; Employee</a>
+                    <a href="#" id="tabviewalast"> &nbsp; Search</a>
+                    
+                </div>
+                <div class="tabs">
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'home')">HOME</button>
+                        <button class="tablinks" onclick="openCity(event, 'dia')">DIAGNOSTICS</button>
+                        <button class="tablinks" onclick="openCity(event, 'app')">APPOINTMENT</button>
+                        <button class="tablinks" onclick="openCity(event, 'ph')">PHARMACEUTICAL</button>
+                    </div>
+                    
+                    <!-- Tab content -->
+                    <div id="home" class="tabcontent">
+                        <h3>bleh</h3>
+                        <p>blehb;lhelhkhvghxubygcuiguygzuygzugrvniughv</p>
+                    </div>
+                    
+                    <div id="dia" class="tabcontent">
+                        <div id="formsearch">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                        <div class="photos">
+                            <div class="pic1"></div>
+                            <a href="#" class="pic1home">Home</a>
+                            <div class="pic2" id="activepic"></div>
+                            <a href="#" class="pic2ord">Orders</a>
+                            <div class="pic3"></div>
+                            <a href="#" class="pic3rep">Reports</a>
+                        </div>
+                        <div class="calendar">
+                            <p>Today,March 24</p>
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <div class="ordercards">
+                            <div class="orders">
+                                <p>Orders</p>
+                            </div>
+                            <div class="sc">
+                                <p>Sample Collected</p>
+                            </div>
+                            <div class="pending">
+                                <p>Pending</p>
+                            </div>
+                        </div>
+                        <p class="h3details">Details</p>
+                        <div class="tb">    
+                            <ul>
+                                <li >
+                                    <p id="stn">Name</p>
+                                </li>
+                                <li class="tbli1" >
+                                    <p>Test orders</p>
+                                </li>
+                                <li>
+                                    <p id="proml">Test Orders</p>
+                                </li>
+                                <li>
+                                    <p id="packml">Status</p>
+                                </li>
+                                <li>
+                                    <p id="statml">Collected By</p>
+                                </li>
+                            </ul>   
+                        </div>
+                        <div class="tbentry">    
+                            <ul>
+                                <li id="flexing">
+                                    <div class="namepic"></div>
+                                    <p>Babur Ahmed</p>
+                                </li>
+                                <li class="tbli1e" id="notgreen">
+                                    <p>TSH,PBBS</p>
+                                </li>
+                                <li id="testord2">
+                                    <p>Address</p>
+                                </li>
+                                <li id="statusnew1">
+                                    <p>Collected</p>
+                                </li>
+                                <li class="tbli1e" id="status">
+                                    
+                                    <p class="activep" >Employee Name</p>
+                                    
+                                </li>
+                            </ul>   
+                        </div>
+                        <hr class="entryhr">
+                        <div class="tbentry">    
+                            <ul>
+                                <li id="flexing">
+                                    <div class="namepic"></div>
+                                    <p>Babur Ahmed</p>
+                                </li>
+                                <li class="tbli1e" id="notgreensec">
+                                    <p>Uric Acid</p>
+                                </li>
+                                <li id="testord2">
+                                    <p>Address</p>
+                                </li>
+                                <li id="statusnew2">
+                                    <p>Pending</p>
+                                </li>
+                                <li class="tbli1e" id="status">
+                                    
+                                    <p class="activep" >Employee Name</p>
+                
+                                </li>
+                            </ul>   
+                        </div>
+                        <hr class="entryhr">
+                    </div>
+                    
+                    <div id="app" class="tabcontent">
+                        <h3>bleh</h3>
+                        <p>blehb;lhelhkhvghxubygcuiguygzuygzugrvniughv</p>
+                    </div>
+                    <div id="ph" class="tabcontent">
+                        <h3>bleh</h3>
+                        <p>blehb;lhelhkhvghxubygcuiguygzuygzugrvniughv</p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>    
+    <div class="phoneview">
+
+    </div>   
+    <script>
+        function openCity(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+    </script>  
+</body>
+</html>
