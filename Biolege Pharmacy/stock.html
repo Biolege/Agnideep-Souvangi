@@ -1,0 +1,337 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Stocks</title>  
+ </head>
+ <style>
+    *
+    {
+        font-family: 'Nunito sans'; 
+    }
+    .bike 
+    {
+      background: #141B41;
+    }
+    .btn1
+    {
+      background: #141B41;
+      border-radius: 100px;
+      color: white;
+      border: none;
+    }
+    .btn2
+    {
+      background: #FF0303;
+      border-radius: 100px;
+      color: white;
+      border: none;
+    }
+    .btn3
+    {
+      background: #FF8900;
+      border-radius: 100px;
+      
+    }
+    .tbhead
+    {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+    }
+    
+ </style>
+ <body>
+     <div class="container">
+         <div class="row">
+             <div class="col-12">
+                <div class="card-deck mt-5">
+                    <div class="card p-3 shadow border-0">
+                        <h4 class="card-title d-inline-block mb-5">Import Medicines <a href="#" class="text-secondary"> <i class="fas fa-arrow-right float-right"></i></a> </h4>
+                        <p class="card-text">Import medicines into your inventory</p>
+                    </div>
+                    <div class="card p-3 shadow border-0">
+                        <h4 class="card-title d-inline-block mb-5">Place Orders <a href="#" class="text-secondary"> <i class="fas fa-arrow-right float-right"></i></a></h4>
+                        <p class="card-text">Get medicines from Biolege meds</p>
+                    </div>
+                </div>
+             </div>   
+         </div>
+         <div class="row">
+          <div class="col-12">
+             <div class="card-deck mt-5">
+                 <div class="card p-3 shadow border-0">
+                     <h4 class="card-title d-inline-block mb-5">My Orders<a href="#" class="text-secondary"> <i class="fas fa-arrow-right float-right"></i></a> </h4>
+                     <p class="card-text">Check your ordered list ordered from Biolege</p>
+                 </div>
+                 <div class="card p-3 shadow border-0">
+                     <h4 class="card-title d-inline-block mb-5">Search alternative meds <a href="#" class="text-secondary"> <i class="fas fa-arrow-right float-right"></i></a></h4>
+                     <p class="card-text">Get alternative meds from biolege</p>
+                 </div>
+             </div>
+          </div>
+         </div>  
+          <div class="row">
+            <div class="col-12">
+                   <div class="card p-3 shadow border-0 mt-5">
+                       <h4 class="card-title d-inline-block mb-5">My Imports<a href="#" class="text-secondary"> <i class="fas fa-arrow-right float-right"></i></a> </h4>
+                       <p class="card-text">Check on your meds you imported</p>
+                   </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 ">
+              <div class="card p-3 shadow border-0 mt-5 bike">
+                <h4 class="card-title d-inline-block mb-5 text-white">Track medicine from Biolege<a href="#" class="text-secondary"> <i class="fas fa-arrow-right float-right text-white"></i></a>  </h4>
+                <p class="card-text text-white">Check where your order has reached 
+                  <a class="float-right font-weight-bold text-white">
+                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-bicycle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5zm1.5 2.443l-.508.814c.5.444.85 1.054.967 1.743h1.139L5.5 6.943zM8 9.057L9.598 6.5H6.402L8 9.057zM4.937 9.5a1.997 1.997 0 0 0-.487-.877l-.548.877h1.035zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765l1.027-1.643zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53L11.55 8.623z" />
+                    </svg>
+                  </a> 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 ">
+              <div class="card p-3 shadow border-0 mt-5 bg-primary">
+                <h4 class="card-title d-inline-block mb-5 text-white">Meds from Biolege<a href="#" class="text-secondary"> <i class="fas fa-arrow-right float-right text-white"></i></a>  </h4>
+                <p class="card-text text-white">Check the list of medicines procured from biolege
+                  <a class="float-right font-weight-bold text-white">
+                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-bicycle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5zm1.5 2.443l-.508.814c.5.444.85 1.054.967 1.743h1.139L5.5 6.943zM8 9.057L9.598 6.5H6.402L8 9.057zM4.937 9.5a1.997 1.997 0 0 0-.487-.877l-.548.877h1.035zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765l1.027-1.643zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53L11.55 8.623z" />
+                    </svg>
+                  </a> 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 ">
+              <div class="card p-3 shadow border-0 mt-5 bg-warning">
+                <h4 class="card-title d-inline-block mb-5 text-white">Check your inventory<a href="#" class="text-secondary"> <i class="fas fa-arrow-right float-right text-white"></i></a>  </h4>
+                <p class="card-text text-white">Check the status of your inventory 
+                  <a class="float-right font-weight-bold text-white">
+                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-bicycle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5zm1.5 2.443l-.508.814c.5.444.85 1.054.967 1.743h1.139L5.5 6.943zM8 9.057L9.598 6.5H6.402L8 9.057zM4.937 9.5a1.997 1.997 0 0 0-.487-.877l-.548.877h1.035zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765l1.027-1.643zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53L11.55 8.623z" />
+                    </svg>
+                  </a> 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 ">
+              <div class="card p-3 shadow border-0 mt-5 bg-secondary">
+                <h4 class="card-title d-inline-block mb-5 text-white">Biolege Meds<a href="#" class="text-secondary"> <i class="fas fa-arrow-right float-right text-white"></i></a>  </h4>
+                <p class="card-text text-white">Stay updated with new arrivals</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-5">
+            <h4 class="d-inline-block">Stock Warning</h4> 
+            <p class="float-right d-inline-block"> <span class="font-weight-bolder"> 32 </span> meds reached the limit</p>    
+          </div>
+          <div class="row w-100 no-gutters">
+            <div class="col-12">
+               <div class="card-deck mt-5 d-flex">
+                 <div class="row">
+                   <div class="col-12 col-md-12 col-lg-4 col-sm-12 mb-md-5 mb-sm-5">
+                    <div class="card p-3 shadow border-0">
+                        <h4 class="card-title d-inline-block ">Paracetamol <a href="#" class="text-danger float-right"><i class="fas fa-exclamation"></i></a> </h4>
+                        <p class="text-secondary font-weight-light">Company Name</p>
+                        <p class="text-danger font-weight-bold mt-2">2 units left</p>
+                        <p class="card-text font-weight-normal mt-5">Iswar drug distributor</p>
+                        <div class="d-inline"> 
+                          <button class="btn1 pl-3 pr-3"><i class="fas fa-plus-circle"></i> Add to order list </button>
+                          <button class="btn2 ml-3 pr-3 pl-3"><i class="far fa-times-circle"></i></button>
+                          <button class="border-0 rounded-circle mt-2"><i class="fas fa-arrow-right text-secondary font-weight-bold"></i></button>
+                        </div> 
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 col-sm-12 mb-md-5 mb-sm-5">
+                      <div class="card p-3 shadow border-0">
+                        <h4 class="card-title d-inline-block ">Paracetamol <a href="#" class="text-danger float-right"><i class="fas fa-exclamation"></i></a> </h4>
+                        <p class="text-secondary font-weight-light">Company Name</p>
+                        <p class="text-danger font-weight-bold mt-2">2 units left</p>
+                        <p class="card-text font-weight-normal mt-5">Iswar drug distributor</p>
+                        <div class="d-inline"> 
+                        <button class="btn1 pl-3 pr-3"><i class="fas fa-plus-circle"></i></button>
+                        <button class="text-white pl-3 pr-3 border-0 ml-3 btn3"><i class="fas fa-shopping-cart"></i>Order</button>
+                        <button class="btn2 ml-3 pr-3 pl-3"><i class="far fa-times-circle"></i></button>
+                        <button class="border-0 rounded-circle "><i class="fas fa-arrow-right text-secondary font-weight-bold"></i></button>
+                        </div> 
+                      </div>
+                   </div>
+                   <div class="col-12 col-md-12 col-lg-4 col-sm-12 col-xs-12 mb-md-5 mb-sm-5 ">
+                    <div class="card p-3 shadow border-0">
+                      <h4 class="card-title d-inline-block ">Paracetamol <a href="#" class="text-danger float-right"><i class="fas fa-exclamation"></i></a> </h4>
+                      <p class="text-secondary font-weight-light">Company Name</p>
+                      <p class="text-danger font-weight-bold mt-2">2 units left</p>
+                      <p class="card-text font-weight-normal mt-5">Iswar drug distributor</p>
+                      <div class="d-inline"> 
+                      <button class="btn1 pl-3 pr-3"><i class="fas fa-plus-circle"></i></button>
+                      <button class="text-white pl-3 pr-3 border-0 ml-3 btn3"><i class="fas fa-shopping-cart"></i>Order</button>
+                      <button class="btn2 ml-3 pr-3 pl-3"><i class="far fa-times-circle"></i></button>
+                      <button class="border-0 rounded-circle "><i class="fas fa-arrow-right text-secondary font-weight-bold"></i></button>
+                      </div> 
+                    </div>
+                   </div>
+                 </div>
+               </div>
+            </div>   
+          </div>
+          <div class="mt-5">
+            <h4 class="d-inline-block">Expiry Warning</h4> 
+            <p class="float-right d-inline-block"> <span class="font-weight-bolder"> 22 </span> meds are near expiry date</p>    
+          </div> 
+          
+               <div class="card-deck mt-5 d-lg-flex d-md-block d-sm-block">
+                   <div class="card p-3 shadow border-0 mb-sm-5 mb-md-5 ">
+                       <h4 class="card-title d-inline-block ">Paracetamol <a href="#" class="text-danger float-right"><i class="fas fa-exclamation"></i></a> </h4>
+                       <p class="text-secondary font-weight-light">Company Name</p>
+                       <p class="text-danger font-weight-bold mt-2">Expires on 12-12-2020</p>
+                       <p class="card-text font-weight-bold mt-5">Biolege Meds</p>
+                       <div>
+                        <button class="text-white pl-3 pr-3 border-0 btn3"><i class="fas fa-shopping-cart"></i>Return</button> 
+                        <button class="border-0 rounded-circle ml-5 float-right"><i class="fas fa-arrow-right text-secondary font-weight-bold"></i></button>
+                       </div> 
+                    </div>
+                    <div class="card p-3 shadow border-0 mb-sm-5 mb-md-5">
+                      <h4 class="card-title d-inline-block ">Paracetamol <a href="#" class="text-danger float-right"><i class="fas fa-exclamation"></i></a> </h4>
+                      <p class="text-secondary font-weight-light">Company Name</p>
+                      <p class="text-danger font-weight-bold mt-2">Expires on 12-12-2020</p>
+                      <p class="card-text font-weight-bold mt-5">Biolege Meds</p>
+                      <div> 
+                       <button class="text-white pl-3 pr-3 border-0 btn3"><i class="fas fa-shopping-cart "></i>Return</button>
+                       <button class="border-0 rounded-circle ml-5 float-right"><i class="fas fa-arrow-right text-secondary font-weight-bold"></i></button>
+                      </div> 
+                   </div>
+               </div>
+            </div>   
+          </div>
+          <h4 class="font-weight-bolder mt-5 ml-5">Medicines</h4>
+          <div class="bg-white shadow rounded h-100 mt-3 p-5">
+            <div class="d-flex">
+              <h5>Medicine List</h5>
+              <div class="input-group w-75 ml-5 mr-4">
+                <input type="text" class="form-control" placeholder="Search Meds" aria-label="" aria-describedby="basic-addon1">
+                <div class="input-group-append">
+                  <button class="btn btn-light border border-left-0 mb-5" type="button"><i class="fas fa-search font-weight-bold text-secondary"></i></button>
+                </div>
+              </div>              
+              <a href="#" class="text-secondary">View All</a>
+            </div>  
+              <table class="table-responsive mt-4 p-3 ml-lg-5 ">
+                <thead class="bg-white shadow tbhead">
+                  <tr>
+                    <th scope="col" class="pr-5 py-3 pl-3">Medicine Name</th>
+                    <th scope="col" class="pr-5">Company Name</th>
+                    <th scope="col" class="pr-5">Quantity</th>
+                    <th scope="col" class="pr-5">Expiry</th>
+                    <th scope="col" class="pr-5">Purchase Price</th>
+                    <th scope="col" class="pr-5">Selling Price</th>
+                    <th scope="col" class="pr-5">Distributor</th>
+                  </tr>
+                </thead>
+                <tbody class=" tbbody">
+                  <tr>
+                    <td scope="row" class="pr-5 py-3 pl-3">Parcetamol</td>
+                    <td class="pr-5">Sun Pharma</td>
+                    <td class="pr-5">304</td>
+                    <td class="pr-5">12-12-2020</td>
+                    <td class="pr-5">111</td>
+                    <td class="pr-5">200</td>
+                    <td class="pr-5">Biolege Meds</td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="pr-5 py-3 pl-3">Parcetamol</td>
+                    <td class="pr-5">Sun Pharma</td>
+                    <td class="pr-5">304</td>
+                    <td class="pr-5">12-12-2020</td>
+                    <td class="pr-5">111</td>
+                    <td class="pr-5">200</td>
+                    <td class="pr-5">Biolege Meds</td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="pr-5 py-3 pl-3">Parcetamol</td>
+                    <td class="pr-5">Sun Pharma</td>
+                    <td class="pr-5">304</td>
+                    <td class="pr-5">12-12-2020</td>
+                    <td class="pr-5">111</td>
+                    <td class="pr-5">200</td>
+                    <td class="pr-5">Biolege Meds</td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="pr-5 py-3 pl-3">Parcetamol</td>
+                    <td class="pr-5">Sun Pharma</td>
+                    <td class="pr-5">304</td>
+                    <td class="pr-5">12-12-2020</td>
+                    <td class="pr-5">111</td>
+                    <td class="pr-5">200</td>
+                    <td class="pr-5">Biolege Meds</td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="pr-5 py-3 pl-3">Parcetamol</td>
+                    <td class="pr-5">Sun Pharma</td>
+                    <td class="pr-5">304</td>
+                    <td class="pr-5">12-12-2020</td>
+                    <td class="pr-5">111</td>
+                    <td class="pr-5">200</td>
+                    <td class="pr-5">Biolege Meds</td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="pr-5 py-3 pl-3">Parcetamol</td>
+                    <td class="pr-5">Sun Pharma</td>
+                    <td class="pr-5">304</td>
+                    <td class="pr-5">12-12-2020</td>
+                    <td class="pr-5">111</td>
+                    <td class="pr-5">200</td>
+                    <td class="pr-5">Biolege Meds</td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="pr-5 py-3 pl-3">Parcetamol</td>
+                    <td class="pr-5">Sun Pharma</td>
+                    <td class="pr-5">304</td>
+                    <td class="pr-5">12-12-2020</td>
+                    <td class="pr-5">111</td>
+                    <td class="pr-5">200</td>
+                    <td class="pr-5">Biolege Meds</td>
+                  </tr>
+                  <tr>
+                    <td scope="row" class="pr-5 py-3 pl-3">Parcetamol</td>
+                    <td class="pr-5">Sun Pharma</td>
+                    <td class="pr-5">304</td>
+                    <td class="pr-5">12-12-2020</td>
+                    <td class="pr-5">111</td>
+                    <td class="pr-5">200</td>
+                    <td class="pr-5">Biolege Meds</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div> 
+     </div>
+ </body>
+ </html> 
+  
+  
