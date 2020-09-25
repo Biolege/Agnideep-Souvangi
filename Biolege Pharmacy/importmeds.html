@@ -24,7 +24,7 @@
     <style>
       *
       {
-        font-family: 'Nunito sans';
+        font-family: 'Nunito sans'; 
       }
       .btn1
       {
@@ -39,18 +39,6 @@
       .firstrow
       {
         height: 50vh;
-      }
-      .secondb
-      {
-        height: 25vh;
-      }
-      .thirdb
-      {
-        height: 65vh;
-      }
-      .fourthb
-      {
-        height: 40vh;
       }
     </style>
 </head>
@@ -70,45 +58,30 @@
           <button class="border-0 btn1 float-right text-white px-3">Imports from Biolege</button>
         </div>
       </div>
-      <div class="row firstrow mt-5">
-        <div class="col-lg-7">
-          <div class="boxes p-3 ">
-            <h5 >Add medicine</h5>
-            <div class="input-group mt-5">
-              <input type="text" class="form-control border border-dark" placeholder="Search for medicines" aria-label="" aria-describedby="basic-addon1">
-              <div class="input-group-append">
-                <button class="btn btn-light border border-dark border-left-0 mb-3 bg-white" type="button"><i class="fas fa-search font-weight-bold text-secondary"></i></button>
-              </div>
+      <div class="row mt-4 d-flex-wrap firstrow ">
+        <div class="col-lg-7  p-3 boxes h-50">
+          <h5>Add Medicine</h5>
+          <div class="input-group mt-5 ">
+            <input type="text" class="form-control border border-dark" placeholder="Search for medicines" aria-label="" aria-describedby="basic-addon1">
+            <div class="input-group-append">
+              <button class="btn btn-light bg-white border border-dark border-left-0 mb-5" type="button"><i class="fas fa-search font-weight-bold text-secondary"></i></button>
             </div>
-          </div>
-          <div class="boxes p-3 mt-4 second">
-            <h5 class="mb-5">Importing</h5>
-          </div>
-          <div class="mb-5">
-            <button type="button" name="button" class="btn btn-warning border-0 p-2 float-right mt-2 text-white mb-5">Update Stock</button>
-          </div>
-          <br>
-          <div class="thirdb boxes mt-3 p-3 mb-5">
-            <h5>My Stock (from other distributor)</h5>
-          </div>
+          </div>          
         </div>
-        <div class="col-lg-4 ml-lg-4">
-          <div class="boxes p-3 d-block fourthb">
-            <h5>Latest Imports</h5>
-            <p class="text-secondary">July 27, 2020</p>
-          </div>
-          <div class="boxes p-3 d-flex fourthb mt-3">
-            <p class="pr-5">Last Month Imports</p>
-            <div class="d-flex justify-content-end">
-              <i class="far fa-calendar mt-1 mr-1"></i>
-              <p class="">July 27, 2020</p>
-            </div>
-          </div>
-          <div class="boxes p-3 d-block fourthb mt-3 mb-5">
-            <h5>Imports from Biolege meds</h5>
-            <p class="text-secondary">July 27, 2020</p>
-          </div>
+        <div class="col-lg-4 boxes h-100 p-3 ml-5 d-block">
+          <h5>Latest Import</h5>
+          <p class="text-secondary">July 27, 2020</p>
         </div>
+        <div class="col-lg-7 p-3 boxes h-50">
+          <h5>Importing</h5>
+        </div>
+        <div class="col-lg-4 boxes h-100 p-3 ml-5 d-flex mt-3">
+          <h5>Last month imports</h5>
+          <i class="far fa-calendar mt-1 mr-1 float-right"></i>
+          <h5 class="float-right">July 27, 2020</h4>
+        </div>
+      </div>
+      <div class="row mt-4 d-flex firstrow">
       </div>
     </div>
 </body>

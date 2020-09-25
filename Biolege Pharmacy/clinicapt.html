@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Clinic Appointment</title>
+    <style media="screen">
+      *
+      {
+        font-family: 'Nunito sans';
+      }
+      .NameClass
+      {
+        white-space: nowrap;
+      }
+      .coloumns
+      {
+        box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+      .navheading,.nav-item .active
+      {
+        background: #141B41;
+
+      }
+      .tab, .btn1, .btn2
+      {
+        background-color:  #141B41;
+        border-radius: 10px 10px 0px 0px;
+      }
+      .tab button:focus
+      {
+        border-bottom: 3px solid white
+      }
+      .mobilebox, .qrbox
+      {
+        border: 2px solid #141B41;
+        border-radius: 10px;
+      }
+      .mobilebox button
+      {
+        background: #FF8900;
+        border-radius: 5px;
+      }
+      .heading
+      {
+        background: #141B41;
+      }
+      .scanqr
+      {
+        background: #141B41;
+        border-radius: 5px;
+        white-space: nowrap;
+      }
+      .chckin
+      {
+        background: #FF8900;
+        border-radius: 5px;
+      }
+      .wierdlabel
+      {
+        white-space: nowrap;
+      }
+      .submitbtn
+      {
+        background: #FF8900;
+        border-radius: 5px;
+      }
+      .description, .heading
+      {
+        background: #141B41;
+      }
+      .fv
+      {
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row no-gutters mt-5">
+        <div class="col-lg-7 col-12  p-3  mr-5 coloumns ">
+          <div class="d-flex justify-content-between">
+            <h4>Appointments</h4>
+            <div class="d-xl-flex d-md-flex d-sm-block justify-content-end">
+              <h6 class="mr-3">All</h6>
+              <div class="d-flex justify-content-end">
+                <h6 class="">Today 27, 2020</h6>
+                <i class="far fa-calendar  ml-1"></i>
+              </div>
+            </div>
+          </div>
+          <h6 class="mt-3">Pending</h6>
+          <table class="table table-responsive table-borderless mt-3 ">
+            <thead class="shadow p-3">
+              <tr>
+                <th class="px-4">Patient Name</th>
+                <th class="px-4">Gender</th>
+                <th class="px-4">Age</th>
+                <th class="px-5">Visit</th>
+                <th class="px-3">Time Slot</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="px-4"></td>
+                <td class="px-4">Male</td>
+                <td class="px-4">34</td>
+                <td class="px-5"></td>
+                <td class="px-3"></td>
+              </tr>
+              <tr>
+                <td scope="row" class="px-4">
+                  <div class="d-flex">
+                    <i class="fas fa-circle mr-2 text-secondary mt-1"></i>
+                    <p class= "NameClass">Rupali Domgre</p>
+                  </div>
+                </td>
+                <td class="px-4">Female</td>
+                <td class="px-4">40</td>
+                <td class="px-5 fv">First Visit</td>
+                <td class="px-3">12:00PM</td>
+              </tr>
+              <tr>
+                <td scope="row" class="px-4">
+                  <div class="d-flex">
+                    <i class="fas fa-circle mr-2 text-secondary mt-1"></i>
+                    <p class= "NameClass">Rupali Domgre</p>
+                  </div>
+                </td>
+                <td class="px-4">Female</td>
+                <td class="px-4">40</td>
+                <td class="px-5 fv">First Visit</td>
+                <td class="px-3">12:00PM</td>
+              </tr>
+              <tr>
+                <td scope="row" class="px-4">
+                  <div class="d-flex">
+                    <i class="fas fa-circle mr-2 text-secondary mt-1"></i>
+                    <p class= "NameClass">Rupali Domgre</p>
+                  </div>
+                </td>
+                <td class="px-4">Female</td>
+                <td class="px-4">40</td>
+                <td class="px-5 fv">First Visit</td>
+                <td class="px-3">12:00PM</td>
+              </tr>
+              <tr>
+                <td scope="row" class="px-4">
+                  <div class="d-flex">
+                    <i class="fas fa-circle mr-2 text-secondary mt-1"></i>
+                    <p class= "NameClass">Rupali Domgre</p>
+                  </div>
+                </td>
+                <td class="px-4">Female</td>
+                <td class="px-4">40</td>
+                <td class="px-5 fv">First Visit</td>
+                <td class="px-3">12:00PM</td>
+              </tr>
+              <tr>
+                <td scope="row" class="px-4">
+                  <div class="d-flex">
+                    <i class="fas fa-circle mr-2 text-secondary mt-1"></i>
+                    <p class= "NameClass">Rupali Domgre</p>
+                  </div>
+                </td>
+                <td class="px-4">Female</td>
+                <td class="px-4">40</td>
+                <td class="px-5 fv">First Visit</td>
+                <td class="px-3">12:00PM</td>
+              </tr>
+              <tr class="pb-5">
+                <td scope="row" class="px-4">
+                  <div class="d-flex">
+                    <i class="fas fa-circle mr-2 text-secondary mt-1"></i>
+                    <p class= "NameClass">Rupali Domgre</p>
+                  </div>
+                </td>
+                <td class="px-4">Female</td>
+                <td class="px-4">40</td>
+                <td class="px-5 fv">First Visit</td>
+                <td class="px-3">12:00PM</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <div class="col-lg-4 col-12 coloumns ">
+          <div class="tabs">
+            <div class="tab pt-3 px-3 rounded-top d-md-flex">
+              <button class="tablinks btn1 border-0 text-white pr-xl-5 pr-md-0" onclick="openCity(event, 'checkinpatient')">Check-In Patient</button>
+              <button class="tablinks btn2 border-0 text-white" onclick="openCity(event, 'createapt')">Create Appointment</button>
+            </div>
+            <div id="checkinpatient" class="tabcontent py-5 px-2">
+                <div class="mobilebox pb-5 pt-2 px-3">
+                  <div class="form-group mt-3 pb-0">
+                    <label for="formGroupExampleInput" class="text-dark font-weight-bolder">Mobile Number</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                    <button class="border border-0 float-right mt-4 text-white">Check In</button>  
+                  </div>
+                </div>
+                <h3 class="p-5 font-weight-bold text-dark d-flex justify-content-center">OR</h3>
+                <div class="qrbox">                  
+                    <div class="heading text-white border border-0 p-2">Scan BIOLEGE Card</div>
+                    <div class="form-group mt-3 pb-5 px-3">
+                      <label for="formGroupExampleInput" class="text-dark font-weight-bolder">Card Number</label>
+                      <div class="d-flex">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                        <button class="border border-0 text-white ml-2 scanqr">Scan QR Code</button>  
+                      </div> 
+                      <button class="border border-0 float-right text-white chckin mt-3">Check In</button>  
+                    </div>
+                </div>
+            </div>
+            <div id="createapt" class="tabcontent py-5 px-2">
+              <form>
+                <div class="form-group">
+                  <label for="formGroupExampleInput" class="text-dark font-weight-bold">Name</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2" class="text-dark font-weight-bold">Mobile Number</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2" class="text-dark font-weight-bold">Address</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                </div>
+                <div class="d-flex">
+                  <div class="form-group mr-2">
+                    <label for="formGroupExampleInput2" class="text-dark font-weight-bold">DOB</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput2" class="text-dark font-weight-bold">Gender</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="form-group mt-3">
+                    <label for="formGroupExampleInput2" class="wierdlabel text-dark font-weight-bold">Email-Address (optional) </label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                  </div>
+                  <div class="form-group mt-5">
+                    <label class="sr-only text-dark font-weight-bold" for="inlineFormInputGroupUsername2">Username</label>
+                    <div class="input-group ">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text bg-white border border-0">@</div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="">
+                    </div>
+                  </div>
+                </div>
+                <button class="submitbtn border border-0 text-white p-2 font-weight-bold"> Check In </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-7 p-3 coloumns mt-4">
+          <h4>Completed</h4>
+          <table class="table table-responsive">
+            <thead class="shadow p-3">
+              <tr>
+                <th class="px-4">Patient Name</th>
+                <th class="px-4">Gender</th>
+                <th class="px-4">Age</th>
+                <th class="px-5">Visit</th>
+                <th class="px-3">Time Slot</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="py-3">
+                <td scope="row" class="px-4">
+                  <div class="d-flex">
+                    <i class="fas fa-circle mr-2 text-secondary mt-1"></i>
+                    <p class= "NameClass">Rupali Domgre</p>
+                  </div>
+                </td>
+                <td class="px-4">Female</td>
+                <td class="px-4">40</td>
+                <td class="px-5 fv">First Visit</td>
+                <td class="px-3">12:00PM</td>
+              </tr>
+              <tr class="py-3">
+                <td scope="row" class="px-4">
+                  <div class="d-flex">
+                    <i class="fas fa-circle mr-2 text-secondary mt-1"></i>
+                    <p class= "NameClass">Rupali Domgre</p>
+                  </div>
+                </td>
+                <td class="px-4">Female</td>
+                <td class="px-4">40</td>
+                <td class="px-5 fv">First Visit</td>
+                <td class="px-3">12:00PM</td>
+              </tr>
+              <tr class="py-3">
+                <td scope="row" class="px-4">
+                  <div class="d-flex">
+                    <i class="fas fa-circle mr-2 text-secondary mt-1"></i>
+                    <p class= "NameClass">Rupali Domgre</p>
+                  </div>
+                </td>
+                <td class="px-4">Female</td>
+                <td class="px-4">40</td>
+                <td class="px-5 fv">First Visit</td>
+                <td class="px-3">12:00PM</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+        <div class="col-lg-4 ml-xl-5 ml-md-5 ml-sm-0 mt-4">
+          <div class="description d-flex justify-content-between p-2 text-white rounded mb-4 ">
+            <h5>Today, March 24, 2020</h5>
+            <i class="far fa-calendar"></i>
+          </div>
+          <div class="p-3 shadow rounded d-flex justify-content-between mb-4">
+            <h5>Total Appointments</h5>
+            <h4 class="text-dark font-weight-bold">20</h4>
+          </div>
+          <div class="p-3 shadow rounded d-flex justify-content-between mb-4">
+            <h5>Total Appointments</h5>
+            <h4 class="text-dark font-weight-bold">20</h4>
+          </div>
+          <div class="p-3 shadow rounded d-flex justify-content-between ">
+            <h5>Total Appointments</h5>
+            <h4 class="text-dark font-weight-bold">20</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-11">
+          <h4 class="my-4">Dr. Ghanshyam </h4>
+          <div class="d-xl-flex ">
+            <div class="rounded shadow mb-md-3 mb-xl-0"> 
+              <div class="heading text-white font-weight-bold px-4 py-2 rounded-top">Current Patient</div>
+              <div class="d-flex justify-content-between bg-white p-3 rounded-bottom">
+                <div class="d-flex pr-xl-5 pr-md-5 pr-sm-3 ">
+                  <i class="fas fa-circle mr-2 text-secondary mt-1"></i>
+                  <p class= "NameClass">Rupali Domgre</p>
+                </div>
+                <div class="text-dark font-weight-bold pr-xl-5 pr-md-5 pr-sm-3 fv">First Visit</div>
+                <div class="text-dark font-weight-bold ">11am</div>
+              </div>
+            </div>
+            <div class="rounded shadow ml-xl-5 ml-md-0 mb-md-3 mb-xl-0" > 
+              <div class="heading text-white font-weight-bold px-4 py-2 rounded-top">Current Patient</div>
+              <div class="d-flex justify-content-between bg-white p-3 rounded-bottom">
+                <div class="d-flex pr-xl-5 pr-md-5 pr-sm-3  ">
+                  <i class="fas fa-circle mr-2 text-secondary mt-1"></i>
+                  <p class= "NameClass">Rupali Domgre</p>
+                </div>
+                <div class="text-dark font-weight-bold pr-xl-5 pr-md-5 pr-sm-3 fv">First Visit</div>
+                <div class="text-dark font-weight-bold ">11am</div>
+              </div>
+            </div>
+            <div class="rounded shadow ml-xl-5 ml-md-0 mb-md-3 mb-xl-0"> 
+              <div class="heading text-white font-weight-bold px-4 py-2 rounded-top">Current Patient</div>
+              <div class="d-flex justify-content-between bg-white p-3 rounded-bottom">
+                <div class="d-flex pr-xl-5 pr-md-5 pr-sm-3 ">
+                  <i class="fas fa-circle mr-2 text-secondary mt-1"></i>
+                  <p class= "NameClass">Rupali Domgre</p>
+                </div>
+                <div class="text-dark font-weight-bold pr-xl-5 pr-md-5 pr-sm-3 fv">First Visit</div>
+                <div class="text-dark font-weight-bold ">11am</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-11">
+          <h4 class="my-4">Doctor Available</h4>
+          <div class="d-xl-flex ">
+            <div class="d-flex justify-content-between bg-white p-3 rounded-bottom shadow bg-white mb-xl-0 mb-md-3">
+              <div class="d-flex pr-xl-5 pr-md-5 pr-sm-3 ">
+                <i class="fas fa-circle mr-2 text-secondary mt-1"></i>
+                <p class= "NameClass">Rupali Domgre</p>
+              </div>
+              <div class="text-dark font-weight-bold pr-xl-5 pr-md-5 pr-sm-3 fv">First Visit</div>
+              <div class="text-dark font-weight-bold ">11am</div>
+            </div>
+            <div class="d-flex justify-content-between bg-white p-3 rounded-bottom ml-xl-5 ml-md-0 mb-xl-0 mb-md-3 shadow bg-white">
+              <div class="d-flex pr-xl-5 pr-md-5 pr-sm-3 ">
+                <i class="fas fa-circle mr-2 text-secondary mt-1"></i>
+                <p class= "NameClass">Rupali Domgre</p>
+              </div>
+              <div class="text-dark font-weight-bold pr-xl-5 pr-md-5 pr-sm-3 fv">First Visit</div>
+              <div class="text-dark font-weight-bold ">11am</div>
+            </div>
+            <div class="d-flex justify-content-between bg-white p-3 rounded-bottom ml-xl-5 ml-md-0 mb-xl-0 mb-md-3 shadow bg-white">
+              <div class="d-flex pr-xl-5 pr-md-5 pr-sm-3 ">
+                <i class="fas fa-circle mr-2 text-secondary mt-1"></i>
+                <p class= "NameClass">Rupali Domgre</p>
+              </div>
+              <div class="text-dark font-weight-bold pr-xl-5 pr-md-5 pr-sm-3 fv">First Visit</div>
+              <div class="text-dark font-weight-bold ">11am</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function openCity(evt, cityName) 
+       {
+          // Declare all variables
+          var i, tabcontent, tablinks;
+
+          // Get all elements with class="tabcontent" and hide them
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+
+          // Get all elements with class="tablinks" and remove the class "active"
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+
+          // Show the current tab, and add an "active" class to the button that opened the tab
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+    </script>
+  </body>
+</html>
