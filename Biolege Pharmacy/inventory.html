@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Inventory</title>
+    <style>
+      *
+      {
+        font-family: 'Nunito sans';
+      }
+      .coloumns
+      {
+        box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+      .btn1
+      {
+        background: #141B41;
+        border-radius: 100px;
+        color: white;
+        border: none;
+      }
+      .btn2
+      {
+        background: #FF0303;
+        border-radius: 100px;
+        color: white;
+        border: none;
+      }
+      .btn3
+      {
+        background: #FF8900;
+        border-radius: 100px;
+      }
+      .searchbar
+      {
+        width: 430px;
+      }
+      .squaregreybox
+      {
+        width: 90.28px;
+        height: 100px;
+        background: #C4C4C4;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h4 class="mt-5 mb-3">Inventory</h4>
+        <div class="row">
+          <div class="col-xl-12 coloumns p-3">
+            <div class="d-flex justify-content-between mb-5">
+              <h5>Stock Warning</h5>
+              <a href="#" class="text-secondary">
+                See full list
+                <i class="fas fa-arrow-alt-circle-right ml-3"></i>
+              </a>
+            </div>
+            <div class="card-deck mt-5 d-flex">
+              <div class="row">
+                <div class="col-12 col-md-12 col-lg-4 col-sm-12 mb-md-5 mb-sm-5">
+                 <div class="card p-3 shadow border-0">
+                     <h4 class="card-title d-inline-block ">Paracetamol <a href="#" class="text-danger float-right"><i class="fas fa-exclamation"></i></a> </h4>
+                     <p class="text-secondary font-weight-light">Company Name</p>
+                     <p class="text-danger font-weight-bold mt-2">2 units left</p>
+                     <p class="card-text font-weight-normal mt-5">Iswar drug distributor</p>
+                     <div class="d-inline"> 
+                       <button class="btn1 pl-3 pr-3"><i class="fas fa-plus-circle"></i> Add to order list </button>
+                       <button class="btn2 ml-3 pr-3 pl-3"><i class="far fa-times-circle"></i></button>
+                       <button class="border-0 rounded-circle mt-2"><i class="fas fa-arrow-right text-secondary font-weight-bold"></i></button>
+                     </div> 
+                   </div>
+                 </div>
+                 <div class="col-12 col-md-12 col-lg-4 col-sm-12 mb-md-5 mb-sm-5">
+                   <div class="card p-3 shadow border-0">
+                     <h4 class="card-title d-inline-block ">Paracetamol <a href="#" class="text-danger float-right"><i class="fas fa-exclamation"></i></a> </h4>
+                     <p class="text-secondary font-weight-light">Company Name</p>
+                     <p class="text-danger font-weight-bold mt-2">2 units left</p>
+                     <p class="card-text font-weight-normal mt-5">Iswar drug distributor</p>
+                     <div class="d-inline"> 
+                     <button class="btn1 pl-3 pr-3"><i class="fas fa-plus-circle"></i></button>
+                     <button class="text-white pl-3 pr-3 border-0 ml-3 btn3"><i class="fas fa-shopping-cart"></i>Order</button>
+                     <button class="btn2 ml-3 pr-3 pl-3"><i class="far fa-times-circle"></i></button>
+                     <button class="border-0 rounded-circle "><i class="fas fa-arrow-right text-secondary font-weight-bold"></i></button>
+                     </div> 
+                   </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 col-sm-12 col-xs-12 mb-md-5 mb-sm-5 ">
+                 <div class="card p-3 shadow border-0">
+                   <h4 class="card-title d-inline-block ">Paracetamol <a href="#" class="text-danger float-right"><i class="fas fa-exclamation"></i></a> </h4>
+                   <p class="text-secondary font-weight-light">Company Name</p>
+                   <p class="text-danger font-weight-bold mt-2">2 units left</p>
+                   <p class="card-text font-weight-normal mt-5">Iswar drug distributor</p>
+                   <div class="d-inline"> 
+                   <button class="btn1 pl-3 pr-3"><i class="fas fa-plus-circle"></i></button>
+                   <button class="text-white pl-3 pr-3 border-0 ml-3 btn3"><i class="fas fa-shopping-cart"></i>Order</button>
+                   <button class="btn2 ml-3 pr-3 pl-3"><i class="far fa-times-circle"></i></button>
+                   <button class="border-0 rounded-circle "><i class="fas fa-arrow-right text-secondary font-weight-bold"></i></button>
+                   </div> 
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-12 coloumns p-3 mt-5">
+            <div class="d-flex justify-content-between mb-5 mt-4">
+              <h5>Expiry Warning</h5>
+              <a href="#" class="text-secondary">
+                See full list
+                <i class="fas fa-arrow-alt-circle-right ml-3"></i>
+              </a>
+            </div>
+            <div class="card-deck mt-5 d-lg-flex d-md-block d-sm-block">
+              <div class="card p-3 shadow border-0 mb-sm-5 mb-md-5 ">
+                  <h4 class="card-title d-inline-block ">Paracetamol <a href="#" class="text-danger float-right"><i class="fas fa-exclamation"></i></a> </h4>
+                  <p class="text-secondary font-weight-light">Company Name</p>
+                  <p class="text-danger font-weight-bold mt-2">Expires on 12-12-2020</p>
+                  <p class="card-text font-weight-bold mt-5">Biolege Meds</p>
+                  <div>
+                   <button class="text-white pl-3 pr-3 border-0 btn3"><i class="fas fa-shopping-cart"></i>Return</button> 
+                   <button class="border-0 rounded-circle ml-5 float-right"><i class="fas fa-arrow-right text-secondary font-weight-bold"></i></button>
+                  </div> 
+               </div>
+               <div class="card p-3 shadow border-0 mb-sm-5 mb-md-5">
+                 <h4 class="card-title d-inline-block ">Paracetamol <a href="#" class="text-danger float-right"><i class="fas fa-exclamation"></i></a> </h4>
+                 <p class="text-secondary font-weight-light">Company Name</p>
+                 <p class="text-danger font-weight-bold mt-2">Expires on 12-12-2020</p>
+                 <p class="card-text font-weight-bold mt-5">Biolege Meds</p>
+                 <div> 
+                  <button class="text-white pl-3 pr-3 border-0 btn3"><i class="fas fa-shopping-cart "></i>Return</button>
+                  <button class="border-0 rounded-circle ml-5 float-right"><i class="fas fa-arrow-right text-secondary font-weight-bold"></i></button>
+                 </div> 
+                </div>
+                <div class="card p-3 shadow border-0 mb-sm-5 mb-md-5">
+                  <h4 class="card-title d-inline-block ">Paracetamol <a href="#" class="text-danger float-right"><i class="fas fa-exclamation"></i></a> </h4>
+                  <p class="text-secondary font-weight-light">Company Name</p>
+                  <p class="text-danger font-weight-bold mt-2">Expires on 12-12-2020</p>
+                  <p class="card-text font-weight-bold mt-5">Biolege Meds</p>
+                  <div> 
+                   <button class="text-white pl-3 pr-3 border-0 btn3"><i class="fas fa-shopping-cart "></i>Return</button>
+                   <button class="border-0 rounded-circle ml-5 float-right"><i class="fas fa-arrow-right text-secondary font-weight-bold"></i></button>
+                  </div> 
+                </div>
+          </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-12 coloumns p-3 mt-5">
+            <div class="d-flex justify-content-between mt-4">
+              <div class="mr-5">
+                <h5>Medicine List</h5>
+              </div>
+              <div class="input-group searchbar">
+                <input type="text" class="form-control border border-dark" placeholder="Search for medicines" aria-label="" aria-describedby="basic-addon1">
+                <div class="input-group-append mb-3 mb-xl-0 mb-md-0 mb-lg-0 mb-sm-0">
+                  <button class="btn btn-light bg-white border border-dark border-left-0 mb-5" type="button"><i class="fas fa-search font-weight-bold text-secondary"></i></button>
+                </div>
+              </div>
+              <div class="d-flex ml-5">
+                <i class="fas fa-bars mr-3 mt-1"></i>
+                <a href="#" class="text-secondary">
+                  See full list
+                  <i class="fas fa-arrow-alt-circle-right ml-3"></i>
+                </a>
+              </div>
+            </div>
+            <div class="d-block"> 
+              <div class="p-3 coloumns p-3 mb-4">
+                <div class="d-flex">  
+                  <div class="squaregreybox mr-xl-2 mr-md-4 mr-sm-4 mr-4"></div>
+                  <div class="d-xl-flex justify-content-between d-md-block">  
+                    <div class="d-block mr-5">
+                      <div class="d-xl-flex d-md-flex d-sm-block justify-content-between mb-2">
+                        <p class="font-weight-bold">Medicine Name</p>
+                        <p class="font-weight-bold">Company Name</p>
+                      </div>
+                      <div class="d-xl-block d-md-block d-sm-flex">
+                        <p class="font-weight-light text-secondary mb-2 mr-sm-5 mr-md-0 mr-xl-0">Salt Composition</p>
+                        <p class="font-weight-bold">Salt composition name 1 with salt name 2 name 3</p>
+                      </div>
+                    </div>
+                    <div class="ml-xl-5 ml-md-0 mt-md-5 mt-xl-0">
+                      <div class="d-flex justify-content-between mb-2 ml-xl-5 ml-md-0">
+                        <div class="d-flex ml-xl-5 ml-md-0">
+                          <p class="font-weight-bold mr-xl-4 mr-md-4 mr-sm-5 mr-4">Expiry Date</p>
+                          <p class="ml-sm-2 ml-xl-0 ml-md-0">July 22, 2020</p>
+                        </div>
+                        <p>Biolege Meds</p>
+                      </div>
+                      <div class="d-xl-flex d-md-flex d-sm-block justify-content-between mt-4 ml-xl-5 ml-md-0">
+                        <div class="d-flex mr-5 ml-xl-5 ml-md-0">
+                          <p class="font-weight-bold mr-xl-4 mr-md-4 mr-sm-5 mr-5">Quantity</p>
+                          <p class="ml-sm-4 ml-xl-0 ml-md-0">02 units left</p>
+                        </div>
+                        <button class="btn1 pl-3 pr-3 mb-3"><i class="fas fa-plus-circle"></i> Add to order list </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 coloumns p-3 mb-4">
+                <div class="d-flex">  
+                  <div class="squaregreybox mr-xl-2 mr-md-4 mr-sm-4 mr-4"></div>
+                  <div class="d-xl-flex justify-content-between d-md-block">  
+                    <div class="d-block mr-5">
+                      <div class="d-xl-flex d-md-flex d-sm-block justify-content-between mb-2">
+                        <p class="font-weight-bold">Medicine Name</p>
+                        <p class="font-weight-bold">Company Name</p>
+                      </div>
+                      <div class="d-xl-block d-md-block d-sm-flex">
+                        <p class="font-weight-light text-secondary mb-2 mr-sm-5 mr-md-0 mr-xl-0">Salt Composition</p>
+                        <p class="font-weight-bold">Salt composition name 1 with salt name 2 name 3</p>
+                      </div>
+                    </div>
+                    <div class="ml-xl-5 ml-md-0 mt-md-5 mt-xl-0">
+                      <div class="d-flex justify-content-between mb-2 ml-xl-5 ml-md-0">
+                        <div class="d-flex ml-xl-5 ml-md-0">
+                          <p class="font-weight-bold mr-xl-4 mr-md-4 mr-sm-5 mr-4">Expiry Date</p>
+                          <p class="ml-sm-2 ml-xl-0 ml-md-0">July 22, 2020</p>
+                        </div>
+                        <p>Biolege Meds</p>
+                      </div>
+                      <div class="d-xl-flex d-md-flex d-sm-block justify-content-between mt-4 ml-xl-5 ml-md-0">
+                        <div class="d-flex mr-5 ml-xl-5 ml-md-0">
+                          <p class="font-weight-bold mr-xl-4 mr-md-4 mr-sm-5 mr-5">Quantity</p>
+                          <p class="ml-sm-4 ml-xl-0 ml-md-0">02 units left</p>
+                        </div>
+                        <button class="btn1 pl-3 pr-3 mb-3"><i class="fas fa-plus-circle"></i> Add to order list </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 coloumns p-3 mb-4">
+                <div class="d-flex">  
+                  <div class="squaregreybox mr-xl-2 mr-md-4 mr-sm-4 mr-4"></div>
+                  <div class="d-xl-flex justify-content-between d-md-block">  
+                    <div class="d-block mr-5">
+                      <div class="d-xl-flex d-md-flex d-sm-block justify-content-between mb-2">
+                        <p class="font-weight-bold">Medicine Name</p>
+                        <p class="font-weight-bold">Company Name</p>
+                      </div>
+                      <div class="d-xl-block d-md-block d-sm-flex">
+                        <p class="font-weight-light text-secondary mb-2 mr-sm-5 mr-md-0 mr-xl-0">Salt Composition</p>
+                        <p class="font-weight-bold">Salt composition name 1 with salt name 2 name 3</p>
+                      </div>
+                    </div>
+                    <div class="ml-xl-5 ml-md-0 mt-md-5 mt-xl-0">
+                      <div class="d-flex justify-content-between mb-2 ml-xl-5 ml-md-0">
+                        <div class="d-flex ml-xl-5 ml-md-0">
+                          <p class="font-weight-bold mr-xl-4 mr-md-4 mr-sm-5 mr-4">Expiry Date</p>
+                          <p class="ml-sm-2 ml-xl-0 ml-md-0">July 22, 2020</p>
+                        </div>
+                        <p>Biolege Meds</p>
+                      </div>
+                      <div class="d-xl-flex d-md-flex d-sm-block justify-content-between mt-4 ml-xl-5 ml-md-0">
+                        <div class="d-flex mr-5 ml-xl-5 ml-md-0">
+                          <p class="font-weight-bold mr-xl-4 mr-md-4 mr-sm-5 mr-5">Quantity</p>
+                          <p class="ml-sm-4 ml-xl-0 ml-md-0">02 units left</p>
+                        </div>
+                        <button class="btn1 pl-3 pr-3 mb-3"><i class="fas fa-plus-circle"></i> Add to order list </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 coloumns p-3 mb-4">
+                <div class="d-flex">  
+                  <div class="squaregreybox mr-xl-2 mr-md-4 mr-sm-4 mr-4"></div>
+                  <div class="d-xl-flex justify-content-between d-md-block">  
+                    <div class="d-block mr-5">
+                      <div class="d-xl-flex d-md-flex d-sm-block justify-content-between mb-2">
+                        <p class="font-weight-bold">Medicine Name</p>
+                        <p class="font-weight-bold">Company Name</p>
+                      </div>
+                      <div class="d-xl-block d-md-block d-sm-flex">
+                        <p class="font-weight-light text-secondary mb-2 mr-sm-5 mr-md-0 mr-xl-0">Salt Composition</p>
+                        <p class="font-weight-bold">Salt composition name 1 with salt name 2 name 3</p>
+                      </div>
+                    </div>
+                    <div class="ml-xl-5 ml-md-0 mt-md-5 mt-xl-0">
+                      <div class="d-flex justify-content-between mb-2 ml-xl-5 ml-md-0">
+                        <div class="d-flex ml-xl-5 ml-md-0">
+                          <p class="font-weight-bold mr-xl-4 mr-md-4 mr-sm-5 mr-4">Expiry Date</p>
+                          <p class="ml-sm-2 ml-xl-0 ml-md-0">July 22, 2020</p>
+                        </div>
+                        <p>Biolege Meds</p>
+                      </div>
+                      <div class="d-xl-flex d-md-flex d-sm-block justify-content-between mt-4 ml-xl-5 ml-md-0">
+                        <div class="d-flex mr-5 ml-xl-5 ml-md-0">
+                          <p class="font-weight-bold mr-xl-4 mr-md-4 mr-sm-5 mr-5">Quantity</p>
+                          <p class="ml-sm-4 ml-xl-0 ml-md-0">02 units left</p>
+                        </div>
+                        <button class="btn1 pl-3 pr-3 mb-3"><i class="fas fa-plus-circle"></i> Add to order list </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
